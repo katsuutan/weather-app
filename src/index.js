@@ -56,7 +56,7 @@ async function getWeather(location) {
     } catch (error) {
         console.error(error);
         const errorDiv = document.getElementById('weather-container');
-        errorDiv.textContent = 'Error 404: ' + error;
+        errorDiv.textContent = `Error 404: ${  error}`;
     }
 }
 
